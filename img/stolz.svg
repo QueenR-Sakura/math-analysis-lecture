@@ -1,0 +1,31 @@
+<svg viewBox="0 0 680 330" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Stolz 定理的差分累加</title>
+  <desc>把 x_n 拆成起点 x_N 加上一串差分，每段差分约等于 l 乘对应 Δy，累加后除以 y_n 得到 l</desc>
+  <text x="24" y="28" font-size="15" font-weight="500" fill="#1a1a1a" font-family="'Microsoft YaHei',sans-serif">图　Stolz：把和拆成「差分累加」</text>
+  <line x1="24" y1="40" x2="656" y2="40" stroke="#e3dff0" stroke-width="1"/>
+
+  <line x1="70" y1="215" x2="620" y2="215" stroke="#111" stroke-width="2"/>
+  <g fill="#EEEDFE" stroke="#534AB7" stroke-width="1.5">
+    <rect x="100" y="175" width="60" height="40"/>
+    <rect x="176" y="160" width="60" height="55"/>
+    <rect x="252" y="148" width="60" height="67"/>
+    <rect x="328" y="138" width="60" height="77"/>
+    <rect x="404" y="130" width="60" height="85"/>
+    <rect x="480" y="124" width="60" height="91"/>
+  </g>
+  <g font-family="'Microsoft YaHei',sans-serif" font-size="12" fill="#3C3489" text-anchor="middle">
+    <text x="130" y="168">Δx_N</text><text x="206" y="153">Δx</text>
+    <text x="282" y="141">Δx</text><text x="358" y="131">Δx</text>
+    <text x="434" y="123">Δx</text><text x="510" y="117">Δx</text>
+  </g>
+  <g font-family="'Microsoft YaHei',sans-serif" font-size="11" fill="#777" text-anchor="middle">
+    <text x="130" y="232">k=N</text><text x="510" y="232">k=n−1</text>
+  </g>
+
+  <text x="70" y="90" font-size="14" fill="#1a1a1a" font-family="'Microsoft YaHei',sans-serif">x_n = x_N + Σ Δx_k ，且 Δx_k ≈ l · Δy_k</text>
+  <text x="70" y="116" font-size="13" fill="#a32d2d" font-family="'Microsoft YaHei',sans-serif">累加 ⇒ x_n ≈ x_N + l (y_n − y_N) ⇒ x_n / y_n → l</text>
+  <text x="70" y="262" font-size="12" fill="#534AB7" font-family="'Microsoft YaHei',sans-serif">关键：y_n → +∞ 让 x_N / y_n 与 y_N / y_n 都趋于 0，余项自动消失。</text>
+
+  <line x1="24" y1="288" x2="656" y2="288" stroke="#e3dff0" stroke-width="1"/>
+  <text x="24" y="310" font-size="11" fill="#777" font-family="'Microsoft YaHei',sans-serif">望远镜求和 Σ Δy_k = y_n − y_N 是第 2 步的核心；特例 y_n = n 即 Cauchy 命题。</text>
+</svg>

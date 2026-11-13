@@ -1,0 +1,14 @@
+/* 主题：简约·学院（浅色） */
+:root, body {
+  --bg: #f4f1ea;
+  --panel: #fbf9f4;
+  --card: #ffffff;
+  --fg: #2c2a26;
+  --muted: #8a8378;
+  --border: #e2ddd2;
+  --accent: #b07d3b;
+  --accent2: #7a5a2e;
+  --badge-S: #c0392b;
+  --badge-A: #2e7d8a;
+  --badge-B: #9a8f7d;
+}

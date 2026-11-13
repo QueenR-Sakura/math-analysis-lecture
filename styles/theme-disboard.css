@@ -1,0 +1,84 @@
+/* ============================================================
+ * 主题：迪司博德 · 盘上世界（NO GAME NO LIFE 风格）
+ * 浅底 + 淡黑白棋盘格 + 高饱和点缀；长时间看图不刺眼
+ * ============================================================ */
+:root, body {
+  --bg: #f7f5f0;
+  --panel: #ffffff;
+  --card: #ffffff;
+  --fg: #2b2740;
+  --muted: #7a738c;
+  --border: #ddd6ea;
+  --accent: #6b46c1;
+  --accent2: #d4537e;
+  --badge-S: #d4537e;
+  --badge-A: #1d9e75;
+  --badge-B: #8a7a9e;
+}
+
+/* 盘上世界：极淡棋盘格铺底，只从侧栏/边缝透出，不压题目图 */
+body {
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(45deg, #ece7f4 25%, transparent 25%, transparent 75%, #ece7f4 75%),
+    linear-gradient(45deg, #ece7f4 25%, transparent 25%, transparent 75%, #ece7f4 75%);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+#sidebar { background: rgba(255, 255, 255, .92); border-right: 2px solid var(--border); }
+#main { background: var(--bg); }
+#topbar {
+  background: rgba(255, 255, 255, .96);
+  border-bottom: 2px solid var(--border);
+  position: relative;
+}
+/* 顶栏下方一条棋盘格饰带 */
+#topbar::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 6px;
+  background-image:
+    linear-gradient(45deg, #6b46c1 25%, transparent 25%, transparent 75%, #6b46c1 75%),
+    linear-gradient(45deg, #6b46c1 25%, transparent 25%, transparent 75%, #6b46c1 75%);
+  background-size: 12px 12px; background-position: 0 0, 6px 6px;
+  opacity: .28;
+}
+#view { background: var(--bg); }
+
+/* 王棋子 logo 与侧栏棋子导航 */
+.logo { background: var(--accent); box-shadow: 0 0 0 2px #fff inset; }
+#nav .nav-btn::before { margin-right: 9px; opacity: .6; font-size: calc(15px * var(--fs, 1)); }
+#nav .nav-btn:nth-child(1)::before { content: "\2654"; }
+#nav .nav-btn:nth-child(2)::before { content: "\2655"; }
+#nav .nav-btn:nth-child(3)::before { content: "\2656"; }
+#nav .nav-btn:nth-child(4)::before { content: "\2657"; }
+.nav-btn.active::before { opacity: 1; }
+
+/* 位阶序列 / 种族棋子栏 */
+#levelBox { border: 2px solid var(--border); background: #fff; }
+.lv-race { color: var(--accent2); }
+.chess-cell.got { background: var(--accent); border-color: var(--accent); }
+.chess-cell.got.ws { background: var(--accent2); border-color: var(--accent2); }
+.chess-cell { border-color: var(--border); }
+
+/* 挑战状 */
+.oath-panel { border: 2px solid var(--accent); background: #faf7ff; }
+.oath-head { color: var(--accent); }
+.oath-tag { background: #ece3ff; color: var(--accent); }
+.oath-bet b { color: var(--accent2); }
+.om-btn.picked { background: var(--accent); color: #fff; border-color: var(--accent); }
+.oath-go { background: var(--accent); color: #fff; border: none; }
+.oath-done { color: var(--accent); }
+.fig-lock { background: rgba(247, 245, 240, .96); }
+.fl-title { color: var(--accent); }
+.defeat-note { border-left: 3px solid var(--accent2); color: var(--accent2); }
+.res-btn.win.picked { background: var(--accent); color: #fff; border-color: var(--accent); }
+.res-btn.lose.picked { background: var(--accent2); color: #fff; border-color: var(--accent2); }
+
+/* 台词过场 */
+#gameToast { background: var(--accent); color: #fff; }
+.drill-banner { border-left: 4px solid var(--accent); }
+.drill-id { background: var(--accent); }
+.drill-sec .dh { color: var(--accent); }
+
+/* 人类种的棋子是「王」 */
+.logo-glyph { display: none; }
+.logo::before { content: "\2654"; font-size: calc(25px * var(--fs, 1)); line-height: 1; color: #fff; }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>迪司博德 · 数学分析上册 | 互动学习台</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link id="theme" rel="stylesheet" href="styles/theme-disboard.css" />
+  <link rel="stylesheet" href="vendor/katex/katex.min.css" />
+</head>
+<body>
+  <aside id="sidebar">
+    <div class="brand">
+      <div class="logo"><span class="logo-glyph">f</span></div>
+      <div>
+        <div class="brand-title" id="brandTitle">迪司博德 · 数学分析</div>
+        <div class="brand-sub" id="brandSub">上册 · 谢惠民《习题课讲义》</div>
+      </div>
+    </div>
+    <nav id="nav">
+      <button class="nav-btn active" data-view="laws">法则书 · 定理与证明</button>
+      <button class="nav-btn" data-view="duels">对局场 · 习题练习</button>
+      <button class="nav-btn" data-view="log">败北日志 · 错题归纳</button>
+      <button class="nav-btn" data-view="skills">技能树 · 方法总览</button>
+      <button class="nav-btn" data-view="allies">联邦 · 伙伴名册</button>
+      <button class="nav-btn" data-view="settings">设置</button>
+    </nav>
+    <div id="levelBox">
+      <div class="lv">位阶序列 <span class="lv-race" id="raceName">第十六位 · 人类种</span></div>
+      <div class="chess-row" id="chessRow"></div>
+      <div class="xp-text">种族棋子 <b id="chessCnt">0</b>/16 · 法则 <span id="lawCnt">0</span>/3 · 对局 <span id="duelCnt">0</span>/6 · 连胜 <span id="comboCnt">0</span></div>
+      <div class="lv-sub">Lv.<span id="lvNum">1</span> · <span id="xpNow">0</span>/<span id="xpMax">0</span> XP · 败北 <span id="mistakeCnt">0</span></div>
+    </div>
+  </aside>
+
+  <main id="main">
+    <div id="gameToast" role="status" aria-live="polite"></div>
+    <header id="topbar">
+      <h1 id="viewTitle">法则书</h1>
+      <div id="toolbar"></div>
+      <div id="topControls">
+        <select id="chapterSel" class="ctrl-btn" title="选择章节"></select>
+        <button id="navToggle" class="ctrl-btn" title="收起 / 展开任务栏">☰</button>
+        <button id="fontMinus" class="ctrl-btn" title="缩小字体">A−</button>
+        <span id="fontVal" class="ctrl-val">100%</span>
+        <button id="fontPlus" class="ctrl-btn" title="放大字体">A+</button>
+      </div>
+    </header>
+    <section id="view"></section>
+  </main>
+
+  <script src="vendor/katex/katex.min.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

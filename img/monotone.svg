@@ -1,0 +1,32 @@
+<svg viewBox="0 0 680 330" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>单调有界收敛定理</title>
+  <desc>单调增加且有上界的数列被确界 β 从上方压住，取 N 使 a_N 大于 β−ε 后所有项进入 ε 带</desc>
+  <text x="24" y="28" font-size="15" font-weight="500" fill="#1a1a1a" font-family="'Microsoft YaHei',sans-serif">图　单调有界：确界 β 就是极限</text>
+  <line x1="24" y1="40" x2="656" y2="40" stroke="#e3dff0" stroke-width="1"/>
+
+  <line x1="60" y1="255" x2="620" y2="255" stroke="#111" stroke-width="2"/>
+  <line x1="60" y1="70" x2="60" y2="255" stroke="#111" stroke-width="2"/>
+  <line x1="60" y1="100" x2="620" y2="100" stroke="#a32d2d" stroke-width="1.5" stroke-dasharray="8 5"/>
+  <line x1="60" y1="140" x2="620" y2="140" stroke="#7F77DD" stroke-width="1" stroke-dasharray="5 4"/>
+  <rect x="60" y="100" width="560" height="40" fill="#EEEDFE" opacity="0.6"/>
+
+  <polyline points="90,230 150,205 210,188 270,175 330,164 390,155 450,148 510,142 570,137"
+            fill="none" stroke="#534AB7" stroke-width="2.5"/>
+  <g fill="#534AB7">
+    <circle cx="90" cy="230" r="4"/><circle cx="150" cy="205" r="4"/>
+    <circle cx="210" cy="188" r="4"/><circle cx="270" cy="175" r="4"/>
+    <circle cx="330" cy="164" r="4"/><circle cx="390" cy="155" r="4"/>
+    <circle cx="450" cy="148" r="4"/><circle cx="510" cy="142" r="4"/>
+    <circle cx="570" cy="137" r="4"/>
+  </g>
+
+  <g font-family="'Microsoft YaHei',sans-serif" font-size="12">
+    <text x="566" y="92" fill="#a32d2d" text-anchor="end">β = sup{aₙ}（上确界）</text>
+    <text x="66" y="134" fill="#534AB7">β − ε</text>
+    <text x="392" y="180" fill="#534AB7">a_N &gt; β − ε</text>
+    <text x="574" y="275" fill="#555" text-anchor="end">n</text>
+  </g>
+
+  <line x1="24" y1="292" x2="656" y2="292" stroke="#e3dff0" stroke-width="1"/>
+  <text x="24" y="314" font-size="11" fill="#777" font-family="'Microsoft YaHei',sans-serif">β 是上界 ⇒ 所有项 ≤ β；β 是最小上界 ⇒ 存在 a_N &gt; β − ε；单调性把这一点传给后面所有项。</text>
+</svg>
